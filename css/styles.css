@@ -1,0 +1,673 @@
+/* 
+    1.- Posocionamiento
+    2.- Modelo caja (box model)
+    3.- Tipografia
+    4.- Visuales
+    5.- Otros
+*/
+
+:root {
+  /* Colores */
+  --bitcoin-oranges: #f7931a;
+  --soft-oranges: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+
+* {
+  /* Modelo caja (box model) */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Tipografia */
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+  /* Otros */
+  scroll-behavior: smooth;
+}
+
+header {
+  /* Posocionamiento */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Modelo caja (box model) */
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  /* Tipografia */
+  text-align: center;
+  /* Visuales */
+  background: linear-gradient(207.8deg, var(--warm-black) 16.69%, var(--bitcoin-oranges) 100%);
+}
+
+header img {
+  /* Posocionamiento */
+  align-self: center;
+  /* Modelo caja (box model) */
+  width: 150px;
+  height: 24px;
+  margin-top: 60px;
+}
+
+.header--title-container {
+  /* Posocionamiento */
+  align-self: center;
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 40px;
+  /* Tipografia */
+  text-align: center;
+}
+
+.header--title-container h1 {
+  /* Tipografia */
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  /* Visuales */
+  color: var(--just-white);
+}
+
+.header--title-container p {
+  /* Modelo caja (box model) */
+  margin-top: 25px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  /* Visuales */
+  color: var(--soft-oranges);
+}
+
+.header--title-container .header--button {
+  /* Posocionamiento */
+  position: absolute;
+  left: calc(50% - 114.5px);
+  top: 270px;
+  display: block;
+  /* Modelo caja (box model) */
+  margin-top: 35px;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+  /* Visuales */
+  background-color: var(--off-white);
+    /* Sombra */
+  box-shadow: 0px 4px 8px rgba(89,73,30, 0.16);
+  border: none;
+  border-radius: 5px;
+}
+
+.header--button span {
+  /* Posocionamiento */
+  display: inline-block;
+  /* Modelo caja (box model) */
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  /* Visuales */
+  background-image: url('../assets/icons/down-arrow.svg');
+}
+
+main {
+  /* Modelo caja (box model) */
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  /* Visuales */
+  background-color: var(--off-white);
+}
+
+.main--exchange-container {
+  /* Modelo caja (box model) */
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  /* Tipografia */
+  text-align: center;
+}
+
+.main-exchange-container--title {
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.main--exchange-container .backgroundImg {
+  /* Modelo caja (box model) */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  /* Visuales */
+  background-image: url("../assets/img/Bitcoin.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main--exchange-container h2 {
+  /* Modelo caja (box model) */
+  margin-bottom: 30px;
+  /* Tipografia */
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.main-exchange-container--title p {
+  /* Modelo caja (box model) */
+  margin-bottom: 30px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #757575;
+}
+
+.main--table {
+  /* Modelo caja (box model) */
+  width: 70%;
+  min-width: 235px;
+  max-width: 500px;
+  height: 360px;
+  margin: 0 auto;
+  /* Tipografia */
+  font-family: "Inter", sans-serif;
+}
+
+.main--table .table--title {
+  /* Modelo caja (box model) */
+  margin-bottom: 15px;
+  /* Tipografia */
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2.4rem;
+}
+
+
+
+
+.table--container {
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 230px;
+  max-width: 300px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.table--container table {
+  /* Modelo caja (box model) */
+  width: 100%;
+  height: 100%;
+}
+
+.table--container td {
+  /* Modelo caja (box model) */
+  width: 50%;
+  /* Tipografia */
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  color: var(--grey);
+  /* Visuales */
+  background-color: var(--just-white);
+}
+
+.table--container .table__right {
+  color: #757575;
+}
+
+.table--container .table__top-left {
+  /* Visuales */
+  border-top-left-radius: 15px;
+}
+
+.table--container .table__top-right {
+  /* Visuales */
+  border-top-right-radius: 15px;
+}
+
+.table--container .table__bottom-left {
+  /* Visuales */
+  border-bottom-left-radius: 15px;
+}
+
+.table--container .table__bottom-right {
+  /* Visuales */
+  border-bottom-right-radius: 15px;
+}
+
+.table--container span {
+  /* Posocionamiento */
+  display: inline-block;
+  /* Modelo caja (box model) */
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  /* Visuales */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trending-dows {
+  /* Visuales */
+  background-image: url('../assets/icons/trending-down.svg');
+}
+.trending-up {
+  /* Visuales */
+  background-image: url('../assets/icons/trending-up.svg');
+}
+
+.table--date {
+  /* Modelo caja (box model) */
+  width: 190px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 8px;
+  /* Visuales */
+  border-radius: 8px;
+}
+
+.table--date.bitcoin-backgroundColor {
+  /* Visuales */
+  background-color: var(--soft-oranges);
+}
+.table--date.secondary-backgroundColor {
+  /* Visuales */
+  background-color: var(--soft-blue);
+}
+
+.table--date p {
+  /* Tipografia */
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--warm-black);
+}
+
+.main-product-detail {
+  /* Posocionamiento */
+  position: relative;
+  /* Modelo caja (box model) */
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  /* Visuales */
+  background: var(--warm-black);
+}
+
+.product-datil--batata-logo {
+  /* Posocionamiento */
+  position: absolute;
+  top: -12px;
+  left: calc(50% - 20px);
+  /* Modelo caja (box model) */
+  width: 40px;
+  height: 25px;
+  /* Visuales */
+  background-image: url("../assets/icons/batata.svg")
+}
+
+.product-detail--title{
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* Tipografia */
+  text-align: center;
+}
+
+.product-detail--title h2 {
+  /* Modelo caja (box model) */
+  margin-bottom: 20px;
+  /* Tipografia */
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+
+.product-detail--title p {
+  /* Modelo caja (box model) */
+  margin-bottom: 20px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.product-detail--card {
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  /* Visuales */
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 40px 8px rgba(0, 0, 0, 0.16);
+}
+
+.product-detail--card span {
+  /* Posocionamiento */
+  display: inline-block;
+  /* Modelo caja (box model) */
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  /* Visuales */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.product-detail--card .clock {
+  /* Visuales */
+  background-image: url("../assets/icons/clock.svg");
+}
+
+.product-detail--card .eye {
+  /* Visuales */
+  background-image: url("../assets/icons/eye.svg");
+}
+.product-detail--card .dollar {
+  /* Visuales */
+  background-image: url("../assets/icons/dollar-sign.svg");
+}
+.product-detail--card .check-circle {
+  /* Visuales */
+  background-image: url("../assets/icons/check-circle.svg");
+}
+
+.product--card-title {
+  /* Modelo caja (box model) */
+  margin-bottom: 15px;
+  /* Tipografia */
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.product--card-body {
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #808080;
+}
+
+.bitcoin-img--container {
+  /* Modelo caja (box model) */
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  /* Tipografia */
+  text-align: center;
+  /* Visuales */
+  background-image: url("../assets/img/bitcoinbaby2x.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bitcoin-img--container h2 {
+  /* Modelo caja (box model) */
+  padding-top: 60px;
+  /* Tipografia */
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+
+.main-plans--container {
+  /* Modelo caja (box model) */
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 70px;
+  /* Tipografia */
+  text-align: center;
+}
+
+.plans--title-container {
+  /* Modelo caja (box model) */
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  padding: 65px 0;
+}
+
+.plans--title-container  h2 {
+  /* Tipografia */
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.plans--title-container  p {
+  /* Modelo caja (box model) */
+  padding-top: 30px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.plans-continer--slider {
+  /* Posocionamiento */
+  display: flex;
+  gap: 8px;
+  /* Modelo caja (box model) */
+  height: 316px;
+  padding: 0 15px;
+  /* Otros */
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.plans-container--card {
+  /* Posocionamiento */
+  position: relative;
+  scroll-snap-align: center;
+  /* Modelo caja (box model) */
+  width: 70%;
+  min-width: 190px;
+  max-width: 300px;
+  height: 250px;
+  margin: 50px auto 0;
+  padding: 0 15px;
+  /* Visuales */
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans-container--card .recomendado {
+  /* Posocionamiento */
+  position: absolute;
+  top: -15px;
+  left: calc(50% - 60px);
+  /* Modelo caja (box model) */
+  width: 120px;
+  height: 31px;
+  padding: 9.5px;
+  /* Tipografia */
+  font-size: 1.2rem;
+
+  color: var(--just-white);
+  /* Visuales */
+  background-color: var(--bitcoin-oranges);
+  border-radius: 8px;
+  /* Otros */
+}
+.plan-info--container {
+  color: var(--grey);
+}
+
+.plan-card--title {
+  /* Modelo caja (box model) */
+  padding-top: 30px;
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+
+.plan-card--price {
+  /* Modelo caja (box model) */
+  padding: 5px 0;
+  /* Tipografia */
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: inherit;
+}
+
+.plan-card--price span {
+  /* Tipografia */
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: 25px;
+
+}
+
+.plan-card--saving {
+  /* Tipografia */
+  font-size: 1.2rem;
+  color: #757575;
+}
+
+.plan-card--ca {
+  /* Modelo caja (box model) */
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  /* Tipografia */
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: inherit;
+  /* Visuales */
+  background-color: var(--off-white);
+  border: 2px solid;
+  border-radius: 4px;
+}
+
+.plan-card--ca span {
+  /* Posocionamiento */
+  display: inline-block;
+  /* Modelo caja (box model) */
+  width: 20px;
+  height: 20px ;
+  /* Visuales */
+  background-image: url("../assets/icons/grey-right-arrow.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Otros */
+  vertical-align: text-bottom;
+}
+
+.plan-card--ca .orange-right-arrow {
+  background-image: url("../assets/icons/orange-right-arrow.svg");
+}
+
+
+footer {
+  /* Posocionamiento */
+  display: flex;
+  /* Modelo caja (box model) */
+  width: 100%;
+  height: 150px;
+  /* Visuales */
+  background-color: var(--bitcoin-oranges);
+}
+
+footer section {
+  /* Posocionamiento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Modelo caja (box model) */
+  width: 50%;
+}
+
+footer .left ul {
+  /* Tipografia */
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+
+.left li {
+  /* Modelo caja (box model) */
+  margin: 10px 0;
+}
+.left a {
+  /* Tipografia */
+  text-decoration: none;
+  color: var(--just-white);
+}
+
+.color-black{
+  color: var(--black);
+}
+
+.bitcoin-color{
+  /* Tipografia */
+  color: var(--bitcoin-oranges);
+}
+.secondary-color{
+  /* Tipografia */
+  color: var(--secondary-blue);
+}
+
+.bitcoin-br-color {
+  border-color: var(--bitcoin-oranges);
+}
+
+
+  /* Posocionamiento */
+  /* Modelo caja (box model) */
+  /* Tipografia */
+  /* Visuales */
+  /* Otros */
